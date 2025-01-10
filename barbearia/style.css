@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(235, 141, 0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+/*ANIMAÇAO SPLASH SCREEN    */
+.splashscreen{
+    background-color: coral;
+    background-image: linear-gradient(0deg, rgb(204, 61, 9) 0%, rgb(94, 27, 3) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    animation: fadeOut 6s ease-out forwards;
+}
+.splashscreen img{
+height: 350px;
+width: 350px;
+}
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+.conteudo{
+display:none ;
+}
+body.carregado .conteudo{
+display: block;
+}
+body.carregado .splashscreen{
+    
+    display: none;
+}
+/*FIM ANIMAÇAO SPLASH SCREEN    */
+/*Login */
+.login{
+
+color: black;
+display: none;
+height: 400px;
+width: 350px;
+background-color: rgb(202, 202, 202);
+z-index: 1;
+border-radius: 10px;
+padding: 0px;
+flex-direction: column;
+gap: 30px;
+overflow: auto;
+
+}
+
+.logintext{
+
+padding: 20px;
+background: rgb(172, 103, 0);
+
+
+}
+
+.Nome{
+    padding: 20px;
+}
+
+.Senha{
+    padding: 20px;
+
+}
+
+
+#nome{
+
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    
+
+}
+
+#senha{
+
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    
+}
+
+/*fim login- falta terminar o recebimento do usuario e retirada da tela de login*/
+
