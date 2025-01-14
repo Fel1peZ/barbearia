@@ -11,33 +11,62 @@
 
 
 <div class="splashscreen" id="Splash">
-    <img src="breach.png" alt="">
+    <img src="img/breach.png" alt="">
+</div>
+
+<div class="login">
+
+    <div class="logintext">
+        <h1>login</h1>
+    </div>
+
+
+    <form action="" class="Nome">
+        <p>Nome de usuário</p>
+        <input id="nome" type="text" placeholder="Insira seu nome">
+    </form>
+
+    <form action="" class="Senha">
+        <p>Senha</p>
+        <input id="senha" type="text" placeholder="Insira sua senha">
+    </form>
 </div>
 
 
 <div class="conteudo">
 
+    <div class="menu">
 
-    <div class="login">
 
-        <div class="logintext">
-            <h1>login</h1>
+        <div class="hamburguer">
+            <img src="img/menu.png" alt="">
         </div>
-    
 
-        <form action="" class="Nome">
-            <p>Nome de usuário</p>
-            <input id="nome" type="text" placeholder="Insira seu nome">
-        </form>
+        <div class="breach">
+            <img src="img/breach.png" alt="">
+        </div>
+        
+        
 
-        <form action="" class="Senha">
-            <p>Senha</p>
-            <input id="senha" type="text" placeholder="Insira sua senha">
-        </form>
+
+
+
     </div>
 
 
-    <p>Olá Usuário</p>
+
+
+   
+    <div class="servicos">
+
+        <p>Olá Usuário</p>
+
+
+
+
+
+    </div>
+  
 
 
 
@@ -54,7 +83,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     document.body.classList.add("carregado");
-  }, 5); 
+  }, 5000); 
 });
 
 

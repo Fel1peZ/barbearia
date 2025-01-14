@@ -26,6 +26,8 @@ body{
     height: 100vh;
     width: 100%;
     animation: fadeOut 6s ease-out forwards;
+    position: absolute;
+    z-index: 2;
 }
 .splashscreen img{
 height: 350px;
@@ -55,7 +57,7 @@ body.carregado .splashscreen{
 .login{
 
 color: black;
-display: none;
+display: flex;
 height: 400px;
 width: 350px;
 background-color: rgb(202, 202, 202);
@@ -65,6 +67,7 @@ padding: 0px;
 flex-direction: column;
 gap: 30px;
 overflow: auto;
+position: absolute;
 
 }
 
@@ -107,3 +110,40 @@ background: rgb(172, 103, 0);
 
 /*fim login- falta terminar o recebimento do usuario e retirada da tela de login*/
 
+
+/*menu e conteudo*/
+.conteudo{
+
+display: flex;
+width: 100%;
+height: 100%;
+
+}
+
+.menu{
+ position: relative;
+display: flex;
+width: 100%;
+height: 10%;
+background-color:  rgb(202, 202, 202);
+justify-content: center;
+align-items:center ;
+gap: 70%;
+padding: 15px;
+}
+
+.menu .hamburguer img {
+
+width: 100%;
+height: 100%;
+
+
+}
+
+.menu  .breach img{
+    
+    width: 100%;
+    height:  70px;
+    
+    
+    }
